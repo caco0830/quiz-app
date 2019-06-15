@@ -7,3 +7,12 @@ label{
     display:block;
 }
 
+.container{
+    margin: 0 auto;
+    width: 650px;
+}
+
+ul{
+    list-style-type: none;
+}
+
