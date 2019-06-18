@@ -6,6 +6,9 @@
 label{
     display:block;
 }
+.form{
+    padding: 10px;
+}
 
 .container{
     margin: 0 auto;
@@ -14,5 +17,16 @@ label{
 
 ul{
     list-style-type: none;
+}
+
+.form, .intro-screen, .correct-answer, .wrong-answer, .results{
+    border: 1px solid black;
+    margin-top: 20px;
+    height: 400px;
+}
+
+.block{
+    display: block;
+    text-align: center;
 }
 
