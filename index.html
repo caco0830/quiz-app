@@ -7,20 +7,28 @@
     <title>World Cup Quiz</title>
     <meta name="description" content="Test your historical world cup knowledge">
     <link rel="stylesheet" href="index.css">
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-    <!--<script src="index.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script src="data.js"></script>
 </head>
 
 <body>
-    <div class="container">
+    <main class="container">
+        <header>
+            <ul>
+                <li>Question: <span class="current-question">0</span></li>
+                <li>Current Score: <span class="score">0</span>/5</li>
+            </ul>
+        </header>
         <div class="intro-screen">INTRO SCREEN
+
             <div class="block">Ready to start?</div>
             <div class="block">
-                <button type="submit">Click Here</button>
+                <button type="button" class="intro-button">Click Here</button>
             </div>
         </div>
-        
-    </div>
+        <div class="question-form"></div>
+    </main>
 </body>
 
 

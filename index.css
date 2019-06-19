@@ -30,3 +30,7 @@ ul{
     text-align: center;
 }
 
+.question-form{
+    display: none;
+}
+
