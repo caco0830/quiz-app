@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -7,6 +7,7 @@
     <title>World Cup Quiz</title>
     <meta name="description" content="Test your historical world cup knowledge">
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="index.js"></script>
     <script src="data.js"></script>
@@ -15,21 +16,17 @@
 <body>
     <main class="container">
         <header>
-            <ul>
-                <li>Question: <span class="current-question">0</span></li>
-                <li>Current Score: <span class="score">0</span>/5</li>
-            </ul>
+            <div class="header">
+                <div class="h-question">Question: <span class="current-question">0</span></div><div class="h-score">Current Score: <span class="score">0</span>/5</div>
+            </div>
         </header>
-        <div class="intro-screen">INTRO SCREEN
-
-            <div class="block">Ready to start?</div>
+        <div class="intro-screen">
+            <div class="block">PROVE YOUR WORLD CUP KNOWLEDGE!</div>
             <div class="block">
-                <button type="button" class="intro-button">Click Here</button>
+                <button type="button" class="intro-button">BEGIN!</button>
             </div>
         </div>
         <div class="question-form"></div>
     </main>
 </body>
-
-
 </html>

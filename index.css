@@ -1,11 +1,17 @@
 * {
     box-sizing: border-box;
-    
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("background.jpg") fixed;
 }
 
 label{
-    display:block;
+    display: block;
 }
+
 .form{
     padding: 10px;
 }
@@ -13,12 +19,32 @@ label{
 .container{
     margin: 0 auto;
     width: 650px;
+    height: 500px;
 }
 
-ul{
-    list-style-type: none;
+.header{
+    margin-top: 30px;
 }
 
+.header div{
+    display: inline;
+    border: 1px solid black;
+    width: 300px;
+    padding: 10px 20px;
+}
+
+.h-question{
+    border-radius: 5px 0 0 5px;
+    background-color: #40739e;
+    box-shadow: 3px 3px 10px black;
+}
+
+.h-score{
+    border-radius: 0 5px 5px 0;
+    background-color: #c23616;
+    box-shadow: 3px 3px 10px black;
+
+}
 .form, .intro-screen, .correct-answer, .wrong-answer, .results{
     border: 1px solid black;
     margin-top: 20px;
@@ -32,5 +58,8 @@ ul{
 
 .question-form{
     display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
