@@ -11,8 +11,8 @@ const QUESTIONS = [
     },
     {
         question: "Who is the player with the most World Cup appearances?",
-        answers: ["Rafael Marquez", "Gianluigi Buffon", "Antonio Carbajal", "All fo the above"],
-        correctAnswer: "All fo the above"
+        answers: ["Rafael Marquez", "Gianluigi Buffon", "Antonio Carbajal", "All of the above"],
+        correctAnswer: "All of the above"
     },
     {
         question: "Who is the player with the most goals?",
