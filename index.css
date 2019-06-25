@@ -26,7 +26,6 @@ fieldset {
 
 .container{
     margin: 0 auto;
-    //width: 650px;
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -49,11 +48,9 @@ fieldset {
 .h-question{
     border-radius: 5px 0 0 5px;
     background-color: #40739e;
-    
     width: 150px;
     height: 40px;
     align-self: center;
-    z-index: -1;
 }
 
 .label-container{
@@ -107,11 +104,6 @@ form .submit-answer{
     font-size: 35px;
 }
 
-.question-container{
-    //text-align: center;
-
-}
-
 label{
     display: block;
 }
@@ -150,11 +142,12 @@ label{
 
     .container{
         flex-direction: row-reverse;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .header{
         flex-direction: column;
+        margin: 50px;
     }
 
     .label-container{
@@ -174,6 +167,12 @@ label{
     .h-score{
         border-radius: 5px;
         margin-top: 20px;
+        box-shadow: 3px 3px 10px black;
+    }
+
+    .question-form{
+        width: 750px;
+        display: none;
     }
 
 }
