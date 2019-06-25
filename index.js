@@ -21,15 +21,11 @@ function beginQuiz() {
 
 //render question
 function renderQuestion() {
-    console.log(QUESTIONS.length);
-    console.log(currentQuestion);
+    //console.log(QUESTIONS.length);
+    //console.log(currentQuestion);
     if (currentQuestion < QUESTIONS.length) {
-
         $('.question-form').html(createQuestion);
-        //updateQuestion();
     } else {
-        console.log('render Results');
-
         renderResults();
 
     }
@@ -39,18 +35,18 @@ function renderQuestion() {
 function getUserAnswer() {
     $('.question-form').off();
     $('.question-form').on('click', '.submit-answer', function (event) {
-        console.log('clicked');
+        //console.log('clicked');
         event.preventDefault();
         const userAnswer = $('input:checked').val();
-        console.log(userAnswer);
+        //console.log(userAnswer);
         const correctAnswer = QUESTIONS[currentQuestion].correctAnswer;
 
         if (userAnswer === correctAnswer) {
-            console.log('Answer is correct');
+            //console.log('Answer is correct');
             displayCorrect();
             updateScore();
         } else {
-            console.log('Answer is incorrect');
+            //console.log('Answer is incorrect');
             displayWrong();
         }
     });
@@ -64,7 +60,7 @@ function updateScore() {
 }
 
 function updateQuestion() {
-    console.log('Updating question number');
+    //console.log('Updating question number');
     currentQuestion++;
     $('.current-question').text(currentQuestion + 1);
 }
@@ -77,11 +73,19 @@ function renderNextQuestion() {
     });
 }
 
+function startNewQuiz() {
+    $('.container').on('click', '.start-new', function (event) {
+        console.log('start new');
+        location.reload();
+    });
+}
+
 function createQuestion() {
     return `<div class="question-${currentQuestion}">
     <h2>${QUESTIONS[currentQuestion].question}</h2>
     <form>
      <fieldset>
+     <div class="question-container">
          <label for="answer1">
              <input type="radio" value="${QUESTIONS[currentQuestion].answers[0]}" name="answer" id="answer1">
              <span>${QUESTIONS[currentQuestion].answers[0]}</span>
@@ -99,6 +103,7 @@ function createQuestion() {
              <span>${QUESTIONS[currentQuestion].answers[3]}</span>
          </label>
          <button type="button" class="submit-answer"><span>Submit Answer</span></button>
+         </div>
      </fieldset>
     </form>
     </div>`;
@@ -132,11 +137,6 @@ function renderResults() {
         </div>`);
 }
 
-function startNewQuiz() {
-    $('.question-form').on('click', '.start-new', function (event) {
-        console.log('start new');
-        location.reload();
-    });
-}
+
 
 $(startQuiz);
